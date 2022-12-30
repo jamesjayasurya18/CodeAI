@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="favicon2.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Codex - Your AI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <title>CodeAi</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="app">
-      <div id="chat_container"></div>
+      <div id="chat_container">
+        <div id="app_heading"><h1>Your Coding Assistant</h1></div>
+      </div>
 
       <form>
-        <textarea name="prompt" rows="1" cols="1" placeholder="Ask codex..."></textarea>
+        <textarea class="no_scroll" name="prompt" rows="1" cols="1" placeholder="Ask CodeAI..."></textarea>
         <button type="submit"><img src="assets/send.svg" alt="send" />
       </form>
     </div>

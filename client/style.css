@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Martian+Mono");
 * {
   margin: 0;
   padding: 0;
@@ -12,10 +13,11 @@ body {
 }
 
 #app {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background: #343541;
-
+  background: url("whatsapp.jpg") no-repeat;
+  background-size: cover;
+  opacity: 0.7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,21 +45,36 @@ body {
 #chat_container::-webkit-scrollbar {
   display: none;
 }
-
-.wrapper {
+#chat_container #app_heading{
   width: 100%;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#chat_container #app_heading h1{
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Martian Mono";
+}
+.wrapper {
+  width: 95%;
+  align-self: center;
+  float: right;
   padding: 15px;
+  margin-top: 10px;
+  background: #dcf8c6;
 }
 
 .ai {
-  background: #40414F;
+  background: #ece5dd;
 }
+
 
 .chat {
   width: 100%;
   max-width: 1280px;
-  margin: 0 auto;
 
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -68,7 +85,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 5px;
-
+  
   background: #5436DA;
 
   display: flex;
@@ -77,6 +94,7 @@ body {
 }
 
 .ai .profile {
+ 
   background: #10a37f;
 }
 
@@ -88,8 +106,8 @@ body {
 
 .message {
   flex: 1;
-
-  color: #dcdcdc;
+  
+  color: #000000;
   font-size: 20px;
 
   max-width: 100%;
@@ -129,12 +147,16 @@ textarea {
 
   color: #fff;
   font-size: 18px;
-
   padding: 10px;
   background: transparent;
   border-radius: 5px;
   border: none;
   outline: none;
+  resize: none;
+
+}
+.no_scroll::-webkit-scrollbar {
+  display: none;
 }
 
 button {
@@ -145,6 +167,6 @@ button {
 }
 
 form img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }

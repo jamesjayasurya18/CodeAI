@@ -47,7 +47,7 @@ function generateUniqueId() {
 function chatStripe(isAi, value, uniqueId) {
     return (
         `
-        <div class="wrapper ${isAi && 'ai'}">
+        <div class="wrapper ${isAi && 'ai'} round">
             <div class="chat">
                 <div class="profile">
                     <img 
@@ -61,7 +61,9 @@ function chatStripe(isAi, value, uniqueId) {
     `
     )
 }
-
+window.onload=function () {
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+}
 const handleSubmit = async (e) => {
     e.preventDefault()
 
